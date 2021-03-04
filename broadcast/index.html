@@ -30,22 +30,9 @@
     <script>
       if (document.location.protocol == 'http:') {
       var https = 1;
-      Swal.fire({
-          title: '<strong>Corona-19-API</strong>',
-          icon: 'info',
-          html: 'Redirecting to HTTPS...',
-          showCloseButton: false,
-          showCancelButton: false,
-          focusConfirm: false,
-          confirmButtonText: 'Redirecting to HTTPS...',
-          confirmButtonAriaLabel: 'Thumbs up, great!',
-          cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
-          cancelButtonAriaLabel: 'Thumbs down'
-      })
       setTimeout(function() {
           document.location.href = document.location.href.replace('http:', 'https:');
-      }, 0)
-
+      }, 1000)
   }
 
       setTimeout(function() {
